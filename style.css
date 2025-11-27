@@ -1,118 +1,105 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Outfit', sans-serif;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:"Inter", sans-serif;
 }
 
-header {
-    background: #e50000;
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  color:#fff;
+}
+
+#page{
+  max-width: 120rem;
+  margin-inline: auto;
+}
+
+header{
+  padding-block: 2rem;
+}
+
+fieldset{
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.informacoes-pessoais{
+  div{
+    margin-bottom: 2rem;
+  }
+
+  input{
+    margin-top:.7rem;
+    display: block;
+    padding:1rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    color:oklch(44.4% 0.177 26.899);
+  } 
+
+  input:focus{
+    outline: 2px solid oklch(44.8% 0.119 151.328);
+  }
+
+  input::placeholder{
+    color:oklch(44.4% 0.177 26.899);
+  }
+
+  input[type=file]{
     color: #fff;
-    padding-block: 2rem;
-    position: fixed;
-    width: 100%;
-
-    z-index: 10;
-
+  }
 }
 
-#mapa-mexico {
-    margin-bottom: 4rem;
-    margin-top: 4rem;
-}
-
-img,
-#bandeira {
-    border-radius: 2.8rem;
-    margin-bottom: 2.4rem;
-    height: 66rem;
-    width: 100%;
-}
-
-.italico {
-    font-style: italic;
-    text-align: center;
-}
-
-main {
-    max-width: 1120px;
-    margin-inline: auto;
-
-    padding: 9rem;
-
-    h1 {
-        margin-bottom: 4rem;
-        margin-top: 2rem;
-        color: #0a5416;
-    }
-}
-
-hr {
-
-    margin-top: 3rem;
-}
-
-:root {
-    font-size: 62.5%;
-}
-
-body {
-    font-size: 1.6rem;
-    background: #fff8f8;
-}
-
-.header-container {
-    max-width: 120rem;
-    margin: 0 auto;
+  & > div:nth-of-type(5){
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    gap: 1rem;
+  }
 
-    ul {
-        display: flex;
-        gap: 5rem;
-        list-style: none;
-    }
-
-    a {
-        color: #fff;
-        text-decoration: none;
-    }
-
-    a:hover {
-        transform: scale(1.1);
-        font-weight: bold;
-        transition: ease-in-out .4s;
-    }
-}
-
-main {
-    background: #fff8f8;
-    min-height: calc(100svh - 11.8rem);
-    padding-block: 15.8rem 4rem;
-}
-
-#voltar-para-o-inicio {
-    text-decoration: none;
-    color: #0a5416;
-    margin: 40rem;
-}
-
-.espaço-p {
-    margin-top: 2rem;
+  button{
+    padding: 1rem;
+    width: 10rem;
+    background: oklch(44.4% 0.177 26.899);
+    border-radius: 1rem;
+    border:none;
+    color:#fff;
     margin-bottom: 2rem;
-}
+    cursor: pointer;
+    font-weight: bold;
+  }
 
-#verde {
-    color: #046949;
-}
+  button:hover{
+    background:oklch(45.3% 0.124 130.933);
+    transition: background 0.4s;
+  }
 
-#branco {
-    color: #aeaeae;
-}
+  @media(max-width: 760px){
+    body{
+      padding-inline: 1rem;
+    }
+  }
 
-#vermelho {
-    color: #ce1327;
-}
+
+  body {
+      background-image:url(./assets/bandeira-fundo.jpeg);
+      background-size: cover;
+      background-position: center;
+      
+      height: 100vh; 
+      background-attachment: fixed;
+    }
+
+    h1{
+      text-align: center;
+    }
+
+    .botao {
+      color: white;
+      text-decoration: none;
+    }
