@@ -17,13 +17,7 @@ header {
 
 }
 
-#mapa-mexico {
-    margin-bottom: 4rem;
-    margin-top: 4rem;
-}
-
-img,
-#bandeira {
+img {
     border-radius: 2.8rem;
     margin-bottom: 2.4rem;
     height: 66rem;
@@ -100,19 +94,28 @@ main {
     margin: 40rem;
 }
 
-.espaço-p {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.culinaria h1 {
+    margin-bottom: 0rem;
 }
 
-#verde {
-    color: #046949;
+.culinaria .img-p {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-#branco {
-    color: #aeaeae;
+.culinaria img {
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
 }
 
-#vermelho {
-    color: #ce1327;
+.culinaria .img-p {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.culinaria:nth-of-type(even) .img-p {
+    flex-direction: row-reverse;
 }
