@@ -103,3 +103,8 @@ fieldset{
       color: white;
       text-decoration: none;
     }
+
+    .logo {
+      width: 150px;   /* tamanho do logo */
+      height: auto;
+    }

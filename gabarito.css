@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Outfit', sans-serif;
+}
+
+header {
+    background: #e50000;
+    color: #fff;
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+
+}
+
+
+.header-container {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    ul {
+        display: flex;
+        gap: 5rem;
+        list-style: none;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        transform: scale(1.1);
+        font-weight: bold;
+        transition: ease-in-out .4s;
+    }
+}
+
+
+
+:root {
+    font-size: 62.5%;
+}
+
+#quiz {
+    color: #0a5416;
+    text-align: center;
+}
+
+body {
+    padding-top: 12rem;
+    font-size: 1.6rem;
+    background: #fff8f8;
+    background-image: url(./assets/gabarito.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+.pergunta {
+    margin: 2rem 2rem;
+    background: #ffffffcc;
+    padding: 2rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(4px);
+    margin: 2rem auto;
+    max-width: 50rem;
+    width: 90%;
+}
+
+.pergunta div {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-size: 1.6rem;
+    margin: .5rem 0;
+}
+
+button {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: none;
+    background-color: #b10000;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8a0000;
+}
+
+button {
+    padding: 1rem;
+    width: 10rem;
+    background: oklch(44.4% 0.177 26.899);
+    border-radius: 1rem;
+    border: none;
+    color: #fff;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 2rem 42rem 2rem;
+}
+
+button:hover {
+    background: oklch(45.3% 0.124 130.933);
+    transition:0.4s;
+}
+
+.botao {
+    color: white;
+    text-decoration: none;
+}

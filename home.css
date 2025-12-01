@@ -12,9 +12,7 @@ header {
     padding-block: 2rem;
     position: fixed;
     width: 100%;
-
     z-index: 10;
-
 }
 
 #mapa-mexico {
@@ -22,12 +20,14 @@ header {
     margin-top: 4rem;
 }
 
-img,
-#bandeira {
+img {
+    position: relative;      
+    left: 50%;              
+    transform: translateX(-50%);
     border-radius: 2.8rem;
     margin-bottom: 2.4rem;
     height: 66rem;
-    width: 100%;
+    width: 90rem;
 }
 
 .italico {
